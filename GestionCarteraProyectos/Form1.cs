@@ -41,6 +41,7 @@ namespace GestionCarteraProyectos
         {
             tb_periodo.Focus();
             Limpiar();
+            tb_periodo.Text = DateTime.Today.ToString("yyyy");
 
             l_mensajes.Text = "";
         }
