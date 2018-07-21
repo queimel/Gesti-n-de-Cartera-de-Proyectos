@@ -186,10 +186,15 @@
             // cb_nivel1
             // 
             this.cb_nivel1.FormattingEnabled = true;
+            this.cb_nivel1.Items.AddRange(new object[] {
+            "Operativo",
+            "Tactico",
+            "Estrategico"});
             this.cb_nivel1.Location = new System.Drawing.Point(158, 272);
             this.cb_nivel1.Name = "cb_nivel1";
             this.cb_nivel1.Size = new System.Drawing.Size(276, 21);
             this.cb_nivel1.TabIndex = 13;
+            this.cb_nivel1.SelectedIndexChanged += new System.EventHandler(this.cb_nivel1_SelectedIndexChanged);
             // 
             // dt_fecha
             // 
@@ -274,10 +279,15 @@
             // 
             this.cb_nivel2.BackColor = System.Drawing.SystemColors.InactiveBorder;
             this.cb_nivel2.FormattingEnabled = true;
+            this.cb_nivel2.Items.AddRange(new object[] {
+            "Operativo",
+            "Tactico",
+            "Estrategico"});
             this.cb_nivel2.Location = new System.Drawing.Point(162, 33);
             this.cb_nivel2.Name = "cb_nivel2";
             this.cb_nivel2.Size = new System.Drawing.Size(276, 27);
             this.cb_nivel2.TabIndex = 24;
+            this.cb_nivel2.SelectedIndexChanged += new System.EventHandler(this.cb_nivel2_SelectedIndexChanged);
             // 
             // label12
             // 

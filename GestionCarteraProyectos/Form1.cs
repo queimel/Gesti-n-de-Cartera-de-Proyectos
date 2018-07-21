@@ -47,7 +47,7 @@ namespace GestionCarteraProyectos
 
         private void btn_agregar_Click(object sender, EventArgs e)
         {
-            if("".Equals(tb_periodo))
+            if("".Equals(tb_periodo.Text))
             {
                 l_mensajes.Text = "Debe ingresar un periodo";
                 tb_periodo.Focus();
@@ -115,6 +115,16 @@ namespace GestionCarteraProyectos
                     tb_codigo.Focus();
                 }
             }
+        }
+
+        private void cb_nivel1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            l_mensajes.Text = "";
+        }
+
+        private void cb_nivel2_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            l_mensajes.Text = "";
         }
     }
 }
